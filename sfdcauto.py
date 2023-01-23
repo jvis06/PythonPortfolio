@@ -91,14 +91,14 @@ def testcred():
 
 
 
-cred_file = 'queueautomation-354509-a7b5bd613358.json'
+cred_file = #Cred File removed for confidentiality
 gc = gspread.service_account(cred_file)
-database = gc.open("Tech Analyst Queue and Forecast Tracker 2023")
+database = gc.open(#Sheet removed for confidentiality)
 wks = database.worksheet("Tech Team Tracker")
 
 
-URL = 'https://trustarc.my.salesforce.com/500/x?fcf=00B8a00000DxNz6&rpp_sticky=0&rowsperpage=1000'
-URL2 = 'https://trustarc.my.salesforce.com/_ui/identity/verification/method/ToopherVerificationFinishUi'
+URL = #URL removed for confidentiality
+URL2 = #URL removed for confidentiality
 
 caseNum = []
 onHold = []
