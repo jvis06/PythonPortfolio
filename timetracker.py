@@ -6,9 +6,9 @@ import datetime
 import time
 
 try:
-    cred_file = 'queueautomation-354509-a7b5bd613358.json'
+    cred_file = #Cred File removed for confidentiality
     gc = gspread.service_account(cred_file)
-    database = gc.open("Tech Team Attendance Tracker")
+    database = gc.open(#Sheet removed for confidentiality)
     wks = database.worksheet("Sheet1")
 except:
     m.showerror(message="Check your Internet Connection bitch!")
