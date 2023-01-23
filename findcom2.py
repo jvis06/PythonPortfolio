@@ -20,7 +20,7 @@ def getData():
     for i in gdict:
         final = -1
 
-        driver.get("https://jira.truste.com/browse/" + str(gdict[i]))
+        driver.get(#URL removed for confidentiality)
 
         try:
             wits = WebDriverWait(driver, 10).until(EC.presence_of_element_located
@@ -182,9 +182,9 @@ gdict = {}
 compare = []
 
 
-cred_file = 'jiralocatecomment-e4a6d2b5b760.json'
+cred_file = #Cred File removed for confidentiality
 gc = gspread.service_account(cred_file)
-database = gc.open("JIRA Comment Locator")
+database = gc.open(#Sheetremoved for confidentiality)
 wks = database.worksheet("Sheet1")
 
 a = wks.col_values(1)
@@ -207,7 +207,7 @@ options.headless = True
 driver = webdriver.Chrome(executable_path='./chromedriver', options=options)
 
 
-URL = "https://jira.truste.com/login.jsp?os_destination=%2Fsecure%2FDashboard.jspa"
-URL2 = "https://jira.truste.com/secure/Dashboard.jspa"
+URL = #URL removed for confidentiality
+URL2 = #removed for confidentiality
 
 testcred()
