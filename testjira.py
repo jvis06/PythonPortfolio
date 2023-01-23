@@ -38,7 +38,7 @@ def Scrape():
         wks.update_cell(row, 1, ticketfull)
         summ = i.find("span", class_="issue-link-summary").text
         wks.update_cell(row, 4, summ)
-        driver.get("https://jira.truste.com/browse/" + ticket + '?filter=18481&jql=labels%20%3D%20"Data%2FTech"%20AND%20status%20%3D%20Open%20ORDER%20BY%20priority%20DESC')
+        driver.get(#URL removed for confidentiality)
         time.sleep(10)
         soup = BeautifulSoup(driver.page_source, "html.parser")
         prio = soup.find('span', id="priority-val").text.strip()
@@ -170,9 +170,9 @@ def testcred():
 
 
 
-cred_file = 'jira-automation-369406-df1e66c9aeca.json'
+cred_file = #Cred File removed for confidentiality
 gc = gspread.service_account(cred_file)
-database = gc.open("JIRA Tracking and Monitoring")
+database = gc.open(#Sheet removed for confidentiality)
 wks = database.worksheet("Rebuild")
 
 label = []
@@ -194,9 +194,9 @@ options = Options()
 options.headless = True
 driver = webdriver.Chrome(executable_path='./chromedriver', options=options)
 
-URL = "https://jira.truste.com/login.jsp"
-URL2 = r"https://jira.truste.com/issues/?filter=18481&jql=labels%20%3D%20%22Data%2FTech%22%20AND%20status%20%3D%20Open%20ORDER%20BY%20priority%20DESC"
-URL3 = "https://jira.truste.com/secure/Dashboard.jspa"
+URL = #URL removed for confidentiality
+URL2 = #URL removed for confidentiality
+URL3 = #URL removed for confidentiality
 
 
 
