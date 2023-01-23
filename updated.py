@@ -161,14 +161,14 @@ def testCred():
 
 
 
-cred_file = 'queueautomation-354509-a7b5bd613358.json'
+cred_file = #Cred File removed for confidentiality
 gc = gspread.service_account(cred_file)
-database = gc.open("Tech Analyst Queue and Forecast Tracker 2023")
+database = gc.open(#Sheet removed for confidentiality)
 wks = database.worksheet("Tech Team Tracker")
 wks2 = database.worksheet("Code Red Clients")
 
-URL = 'https://truste1.basecamphq.com/todo_lists?utf8=%E2%9C%93&responsible_party=12788789&due_frame=next_week'
-URL2 = 'https://truste1.basecamphq.com/todo_lists?utf8=%E2%9C%93&responsible_party=12788789&due_frame=all'
+URL = #URL removed for confidentiality
+URL2 = #URL removed for confidentiality
 
 
 # options = Options()
