@@ -89,12 +89,12 @@ def select():
 
 
     try:
-        cred_file = 'queueautomation-354509-a7b5bd613358.json'
+        cred_file = #Cred File removed for confidentiality
         gc = gspread.service_account(cred_file)
-        database = gc.open("Repository Database")
+        database = gc.open(#Sheet removed for confidentiality)
         wks = database.worksheet("Sheet1")
 
-        database = gc.open("GPS Tech Analyst Team 2023 Monthly Calendar")
+        database = gc.open(#Sheet removed for confidentiality)
         wks2 = database.worksheet(str(current_Month)) #str(current_Month)
 
 
