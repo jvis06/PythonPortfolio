@@ -34,7 +34,7 @@ def Scrape():
     for i in pull:
         count = count + 1
         ticket = i.find("span", class_="issue-link-key").text.strip()
-        ticketfull = "https://jira.truste.com/browse/" + str(ticket)
+        ticketfull = #removed for confidentiality
         wks.update_cell(row, 1, ticketfull)
         summ = i.find("span", class_="issue-link-summary").text
         wks.update_cell(row, 4, summ)
@@ -107,9 +107,7 @@ def Scrape():
     
 
 
-    #/Users/jayvisitacion/Desktop/JIRAtest/chromedriver
-#login-form-os-captcha
-
+  
 def testcred():
 
     driver.get(URL)
@@ -212,26 +210,6 @@ print("\n\nScraping Completed! hehe\n\n")
 driver.quit()
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# print(info)
-
-
-
-# with open('test.html', 'w') as f:
-#     f.write(soup.prettify())
 
 
 
